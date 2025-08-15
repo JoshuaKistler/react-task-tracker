@@ -49,7 +49,8 @@ import AddTask from './components/AddTask'
   return (
     <div className="container">
       <Header title={'Task Tracker'} onAdd={() => setShowAddTask 
-      (!showAddTask)}/>
+      (!showAddTask)} 
+      showAdd={showAddTask}/>
       {showAddTask && <AddTask onAdd={addTask}/>}
       {tasks.length > 0 ? (
       <Tasks tasks={tasks} onDelete=
